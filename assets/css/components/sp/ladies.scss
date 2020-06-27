@@ -81,7 +81,7 @@
                     #7ac5d8 100%
                 );
                 background-size: 600% 600%;
-                color: $l-card-bg;
+                color: $l-txt;
                 animation-name: images-bg;
                 animation-duration: 6s;
                 animation-timing-function: ease;
@@ -181,6 +181,7 @@
     .load {
         .load_wrapper {
             font-size: $l-load-font;
+            font-weight: bold;
         }
     }
 }
