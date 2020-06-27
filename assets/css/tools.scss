@@ -1,0 +1,75 @@
+
+@keyframes images-bg {
+    0% {
+        background-position: 0% 80%;
+    }
+    50% {
+        background-position: 100% 80%;
+    }
+    100% {
+        background-position: 0% 80%;
+    }
+}
+
+@keyframes mens-openning-text {
+    0% {
+        top: calc(50% - 124px + 10px);
+        opacity: 0;
+        text-shadow: 0 0 0 $m-txt;
+    }
+    100% {
+        top: calc(50% - 124px);
+        opacity: 1;
+        text-shadow: 8px 8px 0 $m-txt;
+    }
+}
+
+@keyframes mens-openning1 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+@keyframes mens-openning2 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes mens-openning3 {
+    100% {
+        z-index: -99999;
+    }
+}
+
+@keyframes mens-openning4 {
+    100% {
+        padding-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes mens-openning5 {
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes ladies-openning1 {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ladies-openning2 {
+    100% {
+        z-index: -99999;
+    }
+}

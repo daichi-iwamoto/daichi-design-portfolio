@@ -1,0 +1,7 @@
+@import './object/pc/mens.scss';
+@import './object/pc/ladies.scss';
+
+@media screen and (max-width: 769px) {
+    @import './object/sp/mesn.scss';
+    @import './object/sp/ladies.scss';
+}

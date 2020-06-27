@@ -1,0 +1,7 @@
+@import './base/reset.scss';
+
+@import './base/pc.scss';
+
+@media screen and (min-width: 769px) {
+    @import './base/sp.scss';
+}

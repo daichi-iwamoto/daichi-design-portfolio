@@ -1,0 +1,186 @@
+#ladies {
+    #header {
+        background-color: $l-bg;
+        z-index: 9999;
+        padding: 0 5px;
+        .header_logo {
+            &-mode {
+                &Link {
+                    font-size: 16px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+            &-txt {
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+    }
+
+    #mainv {
+        .mainv_box {
+            &-txt {
+                &Title {
+                    font-size: 62px;
+                    text-align: center;
+                }
+                &Sub {
+                    font-size: 24px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #section01 {
+        background-color: $l-card-bg;
+
+        .section01_box {
+            transition: 0.5s;
+            opacity: 0;
+            &-card {
+                &Img {
+                    background-image: linear-gradient(
+                        to right,
+                        #eea2a2 0%,
+                        #bbc1bf 19%,
+                        #57c6e1 42%,
+                        #b49fda 79%,
+                        #7ac5d8 100%
+                    );
+                    color: #fff;
+                    background-size: 600% 600%;
+                    animation-name: images-bg;
+                    animation-duration: 6s;
+                    animation-timing-function: ease;
+                    animation-iteration-count: infinite;
+                }
+
+                &Desc {                    
+                    &Txt {
+                        display: inline;
+                        padding: 10px;
+                        background-color: $l-bg;
+                    }
+                }
+            }
+        }
+    }
+
+    #section02 {
+        .section02_box-swiper {
+            .section2_box-swiperImg {
+                font-weight: bold;
+                background-image: linear-gradient(
+                    to right,
+                    #eea2a2 0%,
+                    #bbc1bf 19%,
+                    #57c6e1 42%,
+                    #b49fda 79%,
+                    #7ac5d8 100%
+                );
+                background-size: 600% 600%;
+                color: $l-card-bg;
+                animation-name: images-bg;
+                animation-duration: 6s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+            .swiper-pagination-bullet-custom {
+                opacity: 0.7;
+                border-radius: 50%;
+                transition: 0.3s;
+                &:hover {
+                    opacity: 1;
+                }
+                &.swiper-pagination-bullet-active {
+                    opacity: 1;
+                    border-radius: 0;
+                    transform: rotate(45deg);
+                    background: $l-caution;
+                }
+            }
+        }
+    }
+
+    #section03 {        
+        .section03_box {
+            &-card {
+                background-color: $l-card-bg;
+
+                &Mainv {
+                    &Img {
+                        background-image: linear-gradient(
+                            to right,
+                            #eea2a2 0%,
+                            #bbc1bf 19%,
+                            #57c6e1 42%,
+                            #b49fda 79%,
+                            #7ac5d8 100%
+                        );
+                        background-size: 600% 600%;
+                        animation-name: images-bg;
+                        animation-duration: 6s;
+                        animation-timing-function: ease;
+                        animation-iteration-count: infinite;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &Body {
+                    &Label {
+                        transition: 0.5s;
+                        &::after {
+                            content: "+";
+                            font-size: 32px;
+                            position: absolute;
+                            top: calc(50% - 16px);
+                            right: 10px;
+                            transition: 0.8s;
+                            transform: rotate(0deg);
+                        }
+                        &:hover {
+                            background-color: $l-txt;
+                            color: $l-card-bg;
+                        }
+                    }
+                    &Tab:checked ~ .section03_box-cardBodyLabel {
+                        background-color: $l-txt;
+                        color: $l-card-bg;
+                        &::after {
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #footer {
+        background-color: $l-card-bg;
+        .footer_links {
+            &-link {
+                border-radius: 5px;
+                &:hover {
+                    background-color: $l-bg;
+                }
+            }
+        }
+        .footer_logo {
+            &-txt {
+                font-size: 24px;
+                border-radius: 3px;
+                background-color: $l-bg;
+            }
+        }
+    }
+
+    $l-load-font: 46px;
+    .load {
+        .load_wrapper {
+            font-size: $l-load-font;
+        }
+    }
+}

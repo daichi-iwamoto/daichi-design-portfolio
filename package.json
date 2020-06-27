@@ -1,0 +1,31 @@
+{
+  "name": "daichi-design-portfolio",
+  "version": "1.0.0",
+  "description": "design portfolio",
+  "author": "daichi-iwamoto",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "nuxt": "^2.0.0",
+    "swiper": "^5.4.5",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-scrollto": "^2.18.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "gsap": "^3.3.4",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}

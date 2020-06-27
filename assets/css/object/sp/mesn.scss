@@ -1,0 +1,138 @@
+#mens {
+    #header {
+        .header_logo {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            &-mode {
+                &Link {
+                    font-size: 12px;
+                }
+            }
+
+            &-txt {
+                padding: 0 10px;
+            }
+        }
+        .header_links {
+            display: none;
+        }
+    }
+
+    #mainv {
+        width: 100%;
+        height: calc(100vh - 50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .mainv_box {
+            &-txt {
+                padding-top: 50px;
+                opacity: 0;
+                animation: mens-openning4 1s ease 1.8s forwards;
+                &Sub {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+    #section01 {
+        .section01_components {
+            width: 900px;
+        }
+        
+        .section01_box {
+            &-card {
+                position: relative;
+                &Img {
+                    margin-bottom: 60px;
+                }
+
+                &Desc {
+                    position: absolute;
+                    bottom: -50px;
+                    width: 100%;
+                    &Txt {
+                        width: 80%;
+                        left: 0;
+                        background-color: $m-bg;
+                    }
+                }
+            }
+
+            &:nth-child(even) {
+                .section01_box-card {
+                    flex-direction: row-reverse;
+
+                    &Desc {
+                        &Txt {
+                            right: 0;
+                            left: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #section03 {        
+        .section03_box {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            &-card {
+                width: 100%;
+                margin: 30px;
+
+                &Mainv {
+                    width: 100%;
+                    height: 200px;
+                    &Img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &Body {
+                    &Tab {
+                        display: none;
+                    }
+                    &Tab:checked ~ .section03_box-cardBodyContents {
+                        max-height: 1000px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #footer {
+        padding: 30px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footer_links, .footer_logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+
+        .footer_links {
+            &-link {
+                margin: 3px 40%;
+                padding: 5px 20px;
+            }
+        }
+
+        .footer_logo {
+            &-txt {
+                padding: 20px 40px;
+            }
+        }
+    }
+}
