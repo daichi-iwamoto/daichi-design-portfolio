@@ -4,23 +4,23 @@
       <swiper class="section02_box-swiper" :options="swiperOption">
         <swiper-slide class="section2_box-swiperImg">
           vueのプラグイン「vue-awesome-swiper」を使用したスライドです。
-          <br>ナビゲーションボタンのデザイン・アニメーションはSCCで自作しました。
+          <br>ナビゲーションボタンのデザイン・アニメーションはCSSで自作しました。
         </swiper-slide>
         <swiper-slide class="section2_box-swiperImg">
           vueのプラグイン「vue-awesome-swiper」を使用したスライドです。
-          <br>ナビゲーションボタンのデザイン・アニメーションはSCCで自作しました。
+          <br>ナビゲーションボタンのデザイン・アニメーションはCSSで自作しました。
         </swiper-slide>
         <swiper-slide class="section2_box-swiperImg">
           vueのプラグイン「vue-awesome-swiper」を使用したスライドです。
-          <br>ナビゲーションボタンのデザイン・アニメーションはSCCで自作しました。
+          <br>ナビゲーションボタンのデザイン・アニメーションはCSSで自作しました。
         </swiper-slide>
         <swiper-slide class="section2_box-swiperImg">
           vueのプラグイン「vue-awesome-swiper」を使用したスライドです。
-          <br>ナビゲーションボタンのデザイン・アニメーションはSCCで自作しました。
+          <br>ナビゲーションボタンのデザイン・アニメーションはCSSで自作しました。
         </swiper-slide>
         <swiper-slide class="section2_box-swiperImg">
           vueのプラグイン「vue-awesome-swiper」を使用したスライドです。
-          <br>ナビゲーションボタンのデザイン・アニメーションはSCCで自作しました。
+          <br>ナビゲーションボタンのデザイン・アニメーションはCSSで自作しました。
         </swiper-slide>
         <div slot="pagination" class="section02_box-swiperPagination swiper-pagination-bullets" />
       </swiper>
